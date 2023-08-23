@@ -70,8 +70,29 @@ carried out include all of the following steps;
 
 Raw dataset                                 |                Cleaned dataset
 :-----------------------------------------: | :-----------------------------------------:
-![](raw_dataset.jpeg)                       |    ![](cleaned_dataset.jpeg)
+![](rawdataset.jpeg)                        |    ![](cleaneddataset.jpeg)
 
+## DAX FUNCTIONS,MEASURES AND CALCULATED COLUMNS.
+1.  Created a measure called total transactions by counting the distinct "TransactionID".
+2.  Created another measure to count the distinct products in the "Product column".
+3.  On the data view tab,i created a new table called basket analysis,then write a Dax functions using "VALUES,CROSSJOIN,
+    FILTER,and SELECTCOLUMN" to get a possible combination of two products.
+4.  Created a new column called "Basket" which will include the two products together by concatinating product1 and
+    product 2,to give a list of cross product in a row.
+5.  Next is the support calculation,which was done by creating a new column.Calculated Columns are used instead 
+    of measures because all calculations done are row level calculations.Using dax,i store product1 and 
+    product2 inside of a variable,then get all product1 and product2 transactions from the groceries table.
+    Still using dax,all transactions containing product one and product two were then gotten using the 
+    "INTERSECT" function and then calculate for Support.
+6.  Created two columns for product1 and product2 Confidence calculations using dax functions.
+7.  Get the relationship between the two products by calculating for Lift,still using dax.
+8.  Visualise the data, then filterd by "sum of lift > [2.2]" and "sum of basket support > [0.6%]" to get 
+    detailed association insight from the two products.
+
+Dashboard
+![](dashboard.jpeg)
+
+Click on the following link to interact with the dashboard. https://app.powerbi.com/groups/me/reports/f8d7a08a-af00-4c02-b422-79292ccaa34d/ReportSection?experience=power-bi
 
 
 
