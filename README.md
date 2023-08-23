@@ -57,7 +57,7 @@ the concepts of Support,Confidence and Lift.
 
 ## DATA PREPARATION.
 Started by importing the dataset into powerbi desktop,then carried out transformation using power query.transformation
-carried out include all of the following; 
+carried out include all of the following steps; 
 1.  An index column was added to the dataset using the "Index Column" in "Add Column".
 2.  All  other columns except the Index column was unpivoted using the "Unpivot other columns" in "transform tab".
     This is required to show all products or items in a list form in a single column with each transaction of the
@@ -67,6 +67,10 @@ carried out include all of the following;
 5.  First letter of each product name was capitalised using the "capitalise Each Word" in the "Transform Tab".
 6.  Rename all columns,"Index column" to "TransactionID" and the "Value column" to "Product column".
 7.  Finally close and apply to load our transformed data into powerbi data model.
+
+Raw dataset                                 |                Cleaned dataset
+:-----------------------------------------: | :-----------------------------------------:
+![](raw_dataset.jpeg)                       |    ![](cleaned_dataset.jpeg)
 
 
 
