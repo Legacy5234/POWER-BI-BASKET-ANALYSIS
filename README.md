@@ -1,6 +1,6 @@
 ## POWER BI - BASKET ANALYSIS
 
-![](images.jpeg)
+![](basket_analysis.jpeg)
 
 **__Disclaimer__**: _Dataset and report does not represent any real company, institution or country, but just a dummy dataset for educational purpose only._
 
